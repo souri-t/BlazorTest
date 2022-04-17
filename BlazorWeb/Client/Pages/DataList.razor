@@ -1,0 +1,111 @@
+﻿@page "/datalist"
+@using BlazorWeb.Shared
+@inject HttpClient Http
+
+<h1>Weather forecast</h1>
+
+<h3>Component1</h3>
+
+
+@if (forecasts == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>check</th>
+                <th>Date</th>
+                <th>Temp. (C)</th>
+                <th>Temp. (F)</th>
+                <th>Summary</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var forecast in forecasts)
+            {
+                <tr>
+                    <td>
+                        <input type="checkbox" name="math" value="" @bind="forecast.IsChecked" />
+                    </td>
+                    <td>@forecast.Date.ToShortDateString()</td>
+                    <td>@forecast.TemperatureC</td>
+                    <td>@forecast.TemperatureF</td>
+                    <td>@forecast.Summary</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+<p>@pushCount</p>
+<button @onclick="OnButtonClick">count</button>
+<button @onclick="OnRegisterButtonClick">登録</button>
+<button @onclick="OnActionButton">コントローラー</button>
+
+
+@if (tempForecasts == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Temp. (C)</th>
+                <th>Temp. (F)</th>
+                <th>Summary</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var forecast in tempForecasts)
+            {
+                <tr>
+                    <td>@forecast.Date.ToShortDateString()</td>
+                    <td>@forecast.TemperatureC</td>
+                    <td>@forecast.TemperatureF</td>
+                    <td>@forecast.Summary</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+<p>@text</p>
+
+@code {
+    private WeatherForecast[] forecasts;
+
+    private WeatherForecast[] tempForecasts;
+
+    protected override async Task OnInitializedAsync()
+    {
+        forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>("DataList");
+    }
+
+    protected int pushCount;
+
+    private void OnButtonClick()
+    {
+        pushCount++;
+    }
+
+    public string text;
+    private void OnRegisterButtonClick()
+    {
+        this.text = this.forecasts.Count().ToString();
+        this.tempForecasts = this.forecasts.Where(e => e.IsChecked).ToArray();
+
+        @*forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>("DataList/Register");*@
+    }
+    async Task OnActionButton()
+    {
+        OwnData ownData = await Http.GetFromJsonAsync<OwnData>("DataList/SiteData");
+        this.text = ownData.Name;
+
+    }
+}

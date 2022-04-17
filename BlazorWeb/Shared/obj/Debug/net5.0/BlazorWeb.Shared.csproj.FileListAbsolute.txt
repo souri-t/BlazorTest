@@ -1,0 +1,11 @@
+/Users/hiyoshiyousuke/Projects/BlazorWeb/BlazorWeb/Shared/bin/Debug/net5.0/BlazorWeb.Shared.deps.json
+/Users/hiyoshiyousuke/Projects/BlazorWeb/BlazorWeb/Shared/bin/Debug/net5.0/BlazorWeb.Shared.dll
+/Users/hiyoshiyousuke/Projects/BlazorWeb/BlazorWeb/Shared/bin/Debug/net5.0/ref/BlazorWeb.Shared.dll
+/Users/hiyoshiyousuke/Projects/BlazorWeb/BlazorWeb/Shared/bin/Debug/net5.0/BlazorWeb.Shared.pdb
+/Users/hiyoshiyousuke/Projects/BlazorWeb/BlazorWeb/Shared/obj/Debug/net5.0/BlazorWeb.Shared.GeneratedMSBuildEditorConfig.editorconfig
+/Users/hiyoshiyousuke/Projects/BlazorWeb/BlazorWeb/Shared/obj/Debug/net5.0/BlazorWeb.Shared.AssemblyInfoInputs.cache
+/Users/hiyoshiyousuke/Projects/BlazorWeb/BlazorWeb/Shared/obj/Debug/net5.0/BlazorWeb.Shared.AssemblyInfo.cs
+/Users/hiyoshiyousuke/Projects/BlazorWeb/BlazorWeb/Shared/obj/Debug/net5.0/BlazorWeb.Shared.csproj.CoreCompileInputs.cache
+/Users/hiyoshiyousuke/Projects/BlazorWeb/BlazorWeb/Shared/obj/Debug/net5.0/BlazorWeb.Shared.dll
+/Users/hiyoshiyousuke/Projects/BlazorWeb/BlazorWeb/Shared/obj/Debug/net5.0/ref/BlazorWeb.Shared.dll
+/Users/hiyoshiyousuke/Projects/BlazorWeb/BlazorWeb/Shared/obj/Debug/net5.0/BlazorWeb.Shared.pdb

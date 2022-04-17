@@ -1,0 +1,45 @@
+﻿<Properties StartupConfiguration="{02DB94A8-9743-4D86-A21E-789EEE007707}|Default">
+  <MonoDevelop.Ide.ItemProperties.BlazorWeb.Server PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="BlazorWeb/Client/Pages/OwnArea.razor">
+    <Files>
+      <File FileName="BlazorWeb/Client/Pages/DataList.razor" Line="46" Column="42" />
+      <File FileName="BlazorWeb/Server/Controllers/DataListController.cs" Line="60" Column="1" />
+      <File FileName="BlazorWeb/Client/Pages/Bind.razor" Line="49" Column="5" />
+      <File FileName="BlazorWeb/Client/Pages/Calendar.razor" Line="1" Column="23" />
+      <File FileName="BlazorWeb/Client/Pages/OwnArea.razor" Line="3" Column="3" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="BlazorWeb" expanded="True">
+            <Node name="BlazorWeb.Client" expanded="True">
+              <Node name="Pages" expanded="True">
+                <Node name="OwnArea.razor" selected="True" />
+              </Node>
+              <Node name="Properties" expanded="True" />
+              <Node name="Shared" expanded="True" />
+            </Node>
+            <Node name="BlazorWeb.Server" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Pages" expanded="True" />
+            </Node>
+            <Node name="BlazorWeb.Shared" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/hiyoshiyousuke/Projects/BlazorWeb/BlazorWeb/Client/Pages/FetchData.razor" relfile="BlazorWeb/Client/Pages/FetchData.razor" line="43" column="1" />
+      <Breakpoint file="/Users/hiyoshiyousuke/Projects/BlazorWeb/BlazorWeb/Server/Controllers/DataListController.cs" relfile="BlazorWeb/Server/Controllers/DataListController.cs" line="43" column="1" />
+      <Breakpoint file="/Users/hiyoshiyousuke/Projects/BlazorWeb/BlazorWeb/Server/Controllers/DataListController.cs" relfile="BlazorWeb/Server/Controllers/DataListController.cs" line="61" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

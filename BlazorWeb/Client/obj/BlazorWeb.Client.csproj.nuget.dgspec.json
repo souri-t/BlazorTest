@@ -1,0 +1,148 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/hiyoshiyousuke/Projects/BlazorWeb/BlazorWeb/Client/BlazorWeb.Client.csproj": {}
+  },
+  "projects": {
+    "/Users/hiyoshiyousuke/Projects/BlazorWeb/BlazorWeb/Client/BlazorWeb.Client.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/hiyoshiyousuke/Projects/BlazorWeb/BlazorWeb/Client/BlazorWeb.Client.csproj",
+        "projectName": "BlazorWeb.Client",
+        "projectPath": "/Users/hiyoshiyousuke/Projects/BlazorWeb/BlazorWeb/Client/BlazorWeb.Client.csproj",
+        "packagesPath": "/Users/hiyoshiyousuke/.nuget/packages/",
+        "outputPath": "/Users/hiyoshiyousuke/Projects/BlazorWeb/BlazorWeb/Client/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/hiyoshiyousuke/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "/Users/hiyoshiyousuke/Projects/BlazorWeb/BlazorWeb/Shared/BlazorWeb.Shared.csproj": {
+                "projectPath": "/Users/hiyoshiyousuke/Projects/BlazorWeb/BlazorWeb/Shared/BlazorWeb.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Components.WebAssembly": {
+              "target": "Package",
+              "version": "[5.0.16, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.16, )"
+            },
+            "System.Net.Http.Json": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Runtime.browser-wasm",
+              "version": "[5.0.16, 5.0.16]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.407/RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "browser-wasm": {
+          "#import": []
+        }
+      }
+    },
+    "/Users/hiyoshiyousuke/Projects/BlazorWeb/BlazorWeb/Shared/BlazorWeb.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/hiyoshiyousuke/Projects/BlazorWeb/BlazorWeb/Shared/BlazorWeb.Shared.csproj",
+        "projectName": "BlazorWeb.Shared",
+        "projectPath": "/Users/hiyoshiyousuke/Projects/BlazorWeb/BlazorWeb/Shared/BlazorWeb.Shared.csproj",
+        "packagesPath": "/Users/hiyoshiyousuke/.nuget/packages/",
+        "outputPath": "/Users/hiyoshiyousuke/Projects/BlazorWeb/BlazorWeb/Shared/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/hiyoshiyousuke/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.407/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

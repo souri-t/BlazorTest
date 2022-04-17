@@ -1,0 +1,52 @@
+﻿@page "/bind"
+
+<div class="form-group">
+    <label for="last-name">Textbox Binding Test</label>
+    <input @bind="TestString" type="text" class="form-control" id="last-name" placeholder="Enter Last Name" />
+</div>
+<div class="form-group">
+    <label for="send-email-updates">Checkbox Binding Test</label>
+    <input type="checkbox" @bind="TestBool" id="send-email-updates" />
+</div>
+<button @onclick="OnButtonClick">count</button>
+
+<Calendar OnClick="ClickHandler" />
+<OwnArea/>
+
+<p>@resultText</p>
+@code {
+    private bool _testBool = true;
+    protected bool TestBool
+    {
+        get { return _testBool; }
+        set
+        {
+            _testBool = value;
+            System.Diagnostics.Debug.WriteLine($"Value of {nameof(TestBool)} = {value}");
+        }
+    }
+
+    private string _testString = "Test Value";
+    protected string TestString
+    {
+        get { return _testString; }
+        set
+        {
+            _testString = value;
+            System.Diagnostics.Debug.WriteLine($"Value of {nameof(TestString)} = {value}");
+        }
+    }
+
+
+    protected string resultText;
+
+    private void OnButtonClick()
+    {
+        resultText = TestBool.ToString();
+    }
+
+    void ClickHandler(DateTime dt)
+    {
+
+    }
+}
