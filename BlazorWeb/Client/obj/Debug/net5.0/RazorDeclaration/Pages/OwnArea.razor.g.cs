@@ -82,6 +82,13 @@ using BlazorWeb.Client.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 1 "/Users/hiyoshiyousuke/Projects/BlazorWeb/BlazorWeb/Client/Pages/OwnArea.razor"
+using BlazorWeb.Shared;
+
+#line default
+#line hidden
+#nullable disable
     public partial class OwnArea : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
@@ -89,6 +96,18 @@ using BlazorWeb.Client.Shared;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 11 "/Users/hiyoshiyousuke/Projects/BlazorWeb/BlazorWeb/Client/Pages/OwnArea.razor"
+       
+    [Parameter]
+    public string ParameterText { get; set; }
+
+    [Parameter]
+    public OwnData ParameterOwnData { get; set; }
+
+#line default
+#line hidden
+#nullable disable
     }
 }
 #pragma warning restore 1591

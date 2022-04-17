@@ -1,12 +1,11 @@
 ﻿<Properties StartupConfiguration="{02DB94A8-9743-4D86-A21E-789EEE007707}|Default">
   <MonoDevelop.Ide.ItemProperties.BlazorWeb.Server PreferredExecutionTarget="/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="BlazorWeb/Client/Pages/OwnArea.razor">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BlazorWeb/Client/Pages/Bind.razor">
     <Files>
-      <File FileName="BlazorWeb/Client/Pages/DataList.razor" Line="46" Column="42" />
+      <File FileName="BlazorWeb/Client/Pages/DataList.razor" Line="1" Column="18" />
       <File FileName="BlazorWeb/Server/Controllers/DataListController.cs" Line="60" Column="1" />
-      <File FileName="BlazorWeb/Client/Pages/Bind.razor" Line="49" Column="5" />
-      <File FileName="BlazorWeb/Client/Pages/Calendar.razor" Line="1" Column="23" />
-      <File FileName="BlazorWeb/Client/Pages/OwnArea.razor" Line="3" Column="3" />
+      <File FileName="BlazorWeb/Client/Pages/Bind.razor" Line="16" Column="32" />
+      <File FileName="BlazorWeb/Client/Pages/OwnArea.razor" Line="11" Column="16" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -14,7 +13,7 @@
           <Node name="BlazorWeb" expanded="True">
             <Node name="BlazorWeb.Client" expanded="True">
               <Node name="Pages" expanded="True">
-                <Node name="OwnArea.razor" selected="True" />
+                <Node name="Bind.razor" selected="True" />
               </Node>
               <Node name="Properties" expanded="True" />
               <Node name="Shared" expanded="True" />

@@ -1,4 +1,5 @@
 ﻿@page "/bind"
+@using BlazorWeb.Shared
 
 <div class="form-group">
     <label for="last-name">Textbox Binding Test</label>
@@ -10,8 +11,10 @@
 </div>
 <button @onclick="OnButtonClick">count</button>
 
-<Calendar OnClick="ClickHandler" />
-<OwnArea/>
+@*<Calendar OnClick="ClickHandler" />*@
+
+
+<OwnArea ParameterText="Hello!" ParameterOwnData=@tempOwnData />
 
 <p>@resultText</p>
 @code {
@@ -48,5 +51,12 @@
     void ClickHandler(DateTime dt)
     {
 
+    }
+
+    private OwnData tempOwnData;
+
+    protected override async Task OnInitializedAsync()
+    {
+        tempOwnData = new OwnData() { Name = "jiro", Age = "10" };
     }
 }

@@ -1,9 +1,17 @@
-﻿<h3>Component1</h3>
+﻿@using BlazorWeb.Shared
+
+<h3>Component1</h3>
 
 <div style="border:1px;">
+    <h1>@ParameterText</h1>
+    <h1>@ParameterOwnData.Name</h1>
     <p>TestArea</p>
 </div>
 
 @code {
+    [Parameter]
+    public string ParameterText { get; set; }
 
+    [Parameter]
+    public OwnData ParameterOwnData { get; set; }
 }

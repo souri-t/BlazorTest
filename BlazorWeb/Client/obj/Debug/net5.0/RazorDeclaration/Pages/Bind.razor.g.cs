@@ -82,6 +82,13 @@ using BlazorWeb.Client.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 2 "/Users/hiyoshiyousuke/Projects/BlazorWeb/BlazorWeb/Client/Pages/Bind.razor"
+using BlazorWeb.Shared;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/bind")]
     public partial class Bind : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -91,7 +98,7 @@ using BlazorWeb.Client.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 17 "/Users/hiyoshiyousuke/Projects/BlazorWeb/BlazorWeb/Client/Pages/Bind.razor"
+#line 20 "/Users/hiyoshiyousuke/Projects/BlazorWeb/BlazorWeb/Client/Pages/Bind.razor"
        
     private bool _testBool = true;
     protected bool TestBool
@@ -126,6 +133,13 @@ using BlazorWeb.Client.Shared;
     void ClickHandler(DateTime dt)
     {
 
+    }
+
+    private OwnData tempOwnData;
+
+    protected override async Task OnInitializedAsync()
+    {
+        tempOwnData = new OwnData() { Name = "jiro", Age = "10" };
     }
 
 #line default
