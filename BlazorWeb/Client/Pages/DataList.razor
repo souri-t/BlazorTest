@@ -44,6 +44,7 @@ else
 <button @onclick="OnButtonClick">count</button>
 <button @onclick="OnRegisterButtonClick">登録</button>
 <button @onclick="OnActionButton">コントローラー</button>
+<button @onclick="Add">Add</button>
 
 
 @if (tempForecasts == null)
@@ -107,5 +108,13 @@ else
         OwnData ownData = await Http.GetFromJsonAsync<OwnData>("DataList/SiteData");
         this.text = ownData.Name;
 
+    }
+
+
+
+    private async Task Add()
+    {
+        var owndata = new OwnData() { Name = "hoge", Age = "22" };
+        var response = await Http.PostAsJsonAsync("DataList", owndata);
     }
 }

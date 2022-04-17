@@ -60,5 +60,18 @@ namespace BlazorWeb.Server.Controllers
 
             return new OwnData() { Name = "taro", Age = "1" };
         }
+
+        [HttpPost]
+        public async Task<ActionResult<OwnData>> CreateAsync(OwnData data)
+        {
+            var name = data.Name;
+            var age = data.Age;
+
+            //context.Books.Add(book);
+            //await context.SaveChangesAsync();
+
+            //return CreatedAtAction("Get", new { id = book.BookId }, book);
+            return data;
+        }
     }
 }

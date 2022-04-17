@@ -98,7 +98,7 @@ using BlazorWeb.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 80 "/Users/hiyoshiyousuke/Projects/BlazorWeb/BlazorWeb/Client/Pages/DataList.razor"
+#line 81 "/Users/hiyoshiyousuke/Projects/BlazorWeb/BlazorWeb/Client/Pages/DataList.razor"
        
     private WeatherForecast[] forecasts;
 
@@ -128,7 +128,7 @@ using BlazorWeb.Shared;
 #line hidden
 #nullable disable
 #nullable restore
-#line 103 "/Users/hiyoshiyousuke/Projects/BlazorWeb/BlazorWeb/Client/Pages/DataList.razor"
+#line 104 "/Users/hiyoshiyousuke/Projects/BlazorWeb/BlazorWeb/Client/Pages/DataList.razor"
                                                                                             
     }
     async Task OnActionButton()
@@ -136,6 +136,14 @@ using BlazorWeb.Shared;
         OwnData ownData = await Http.GetFromJsonAsync<OwnData>("DataList/SiteData");
         this.text = ownData.Name;
 
+    }
+
+
+
+    private async Task Add()
+    {
+        var owndata = new OwnData() { Name = "hoge", Age = "22" };
+        var response = await Http.PostAsJsonAsync("DataList", owndata);
     }
 
 #line default
