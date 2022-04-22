@@ -89,6 +89,19 @@ using BlazorWeb.Client.Shared;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 35 "/Users/hiyoshiyousuke/Projects/BlazorWeb/BlazorWeb/Client/Shared/MainLayout.razor"
+      
+    private bool IsDisplay = true;
+    private string IsDisplayCss => IsDisplay ? null : "display: none;";
+    private void TempMenu()
+    {
+        IsDisplay = !IsDisplay;
+    }
+
+#line default
+#line hidden
+#nullable disable
     }
 }
 #pragma warning restore 1591

@@ -1,13 +1,9 @@
 ﻿<Properties StartupConfiguration="{02DB94A8-9743-4D86-A21E-789EEE007707}|Default">
   <MonoDevelop.Ide.ItemProperties.BlazorWeb.Server PreferredExecutionTarget="/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="BlazorWeb/Server/Startup.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BlazorWeb/Client/Shared/NavMenu.razor">
     <Files>
-      <File FileName="BlazorWeb/Client/Pages/DataList.razor" Line="85" Column="1" />
-      <File FileName="BlazorWeb/Server/Controllers/DataListController.cs" Line="60" Column="1" />
-      <File FileName="BlazorWeb/Client/Pages/Bind.razor" Line="14" Column="27" />
-      <File FileName="BlazorWeb/Client/Pages/OwnArea.razor" Line="7" Column="31" />
-      <File FileName="BlazorWeb/Server/Startup.cs" Line="1" Column="1" />
-      <File FileName="BlazorWeb/Server/Program.cs" Line="1" Column="1" />
+      <File FileName="BlazorWeb/Client/Shared/NavMenu.razor" Line="41" Column="26" />
+      <File FileName="BlazorWeb/Client/Shared/MainLayout.razor" Line="23" Column="35" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -16,12 +12,13 @@
             <Node name="BlazorWeb.Client" expanded="True">
               <Node name="Pages" expanded="True" />
               <Node name="Properties" expanded="True" />
-              <Node name="Shared" expanded="True" />
+              <Node name="Shared" expanded="True">
+                <Node name="NavMenu.razor" expanded="True" selected="True" />
+              </Node>
             </Node>
             <Node name="BlazorWeb.Server" expanded="True">
               <Node name="Controllers" expanded="True" />
               <Node name="Pages" expanded="True" />
-              <Node name="Startup.cs" selected="True" />
             </Node>
             <Node name="BlazorWeb.Shared" expanded="True" />
           </Node>
@@ -39,6 +36,8 @@
       <Breakpoint file="/Users/hiyoshiyousuke/Projects/BlazorWeb/BlazorWeb/Client/Pages/FetchData.razor" relfile="BlazorWeb/Client/Pages/FetchData.razor" line="43" column="1" />
       <Breakpoint file="/Users/hiyoshiyousuke/Projects/BlazorWeb/BlazorWeb/Server/Controllers/DataListController.cs" relfile="BlazorWeb/Server/Controllers/DataListController.cs" line="43" column="1" />
       <Breakpoint file="/Users/hiyoshiyousuke/Projects/BlazorWeb/BlazorWeb/Server/Controllers/DataListController.cs" relfile="BlazorWeb/Server/Controllers/DataListController.cs" line="61" column="1" />
+      <Breakpoint file="/Users/hiyoshiyousuke/Projects/BlazorWeb/BlazorWeb/Server/Controllers/DataListController.cs" relfile="BlazorWeb/Server/Controllers/DataListController.cs" line="67" column="1" />
+      <Breakpoint file="/Users/hiyoshiyousuke/Projects/BlazorWeb/BlazorWeb/Client/Shared/NavMenu.razor" relfile="BlazorWeb/Client/Shared/NavMenu.razor" line="50" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
